@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:language_detector/language_detector.dart';
 
 void main() {
@@ -12,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Language Detector Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Language Detector Demo Page'),
     );
   }
 }
@@ -48,53 +47,38 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 100),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const Text(
-                'Enter content:',
-              ),
-              const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: TextField(
-                      controller: textEditingController,
-                    ),
+      body: Padding(
+        padding: const EdgeInsets.only(left: 100),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const SizedBox(height: 100),
+            const Text(
+              'Enter content:',
+            ),
+            const SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.4,
+                  child: TextField(
+                    controller: textEditingController,
                   ),
-                  const SizedBox(width: 50),
-                  const Text('OR'),
-                  const SizedBox(width: 50),
-                  OutlinedButton(
-                    onPressed: () async {
-                      final clipboardData =
-                          await Clipboard.getData(Clipboard.kTextPlain);
-                      String? clipboardText = clipboardData?.text;
-                      textEditingController.text = clipboardText!;
-                      debugPrint(clipboardText);
-                    },
-                    child: const Text("Paste from clipboard"),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              const SizedBox(height: 20),
-              OutlinedButton(
-                onPressed: () {
-                  detect();
-                },
-                child: const Text("Get Language"),
-              ),
-              const SizedBox(height: 20),
-              if (language.isNotEmpty) Text(' Detected language : $language')
-            ],
-          ),
+                ),
+                const SizedBox(width: 50),
+              ],
+            ),
+            const SizedBox(height: 40),
+            OutlinedButton(
+              onPressed: () {
+                detect();
+              },
+              child: const Text("Get Language >"),
+            ),
+            const SizedBox(height: 100),
+            Text(' Detected language : $language')
+          ],
         ),
       ),
     );
