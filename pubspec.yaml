@@ -1,7 +1,7 @@
 name: language_detector
-description: "A new Flutter package project."
+description: Detect language of any text.
 version: 0.0.1
-homepage:
+homepage: https://github.com/sivaprasadnk/language_detector/
 
 environment:
   sdk: '>=3.3.3 <4.0.0'
