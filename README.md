@@ -2,6 +2,8 @@
 
 Detect language of any text.
 
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-08 at 14 21 11](https://github.com/sivaprasadnk/language_detector/assets/75713903/9840db35-2704-443a-a740-3ddb75193836)
+
 ## Getting started
 
 Add this to your package's `pubspec.yaml` file
