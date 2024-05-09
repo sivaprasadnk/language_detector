@@ -1,7 +1,7 @@
 name: language_detector
 description: Detect language of any text.
-version: 0.0.1
-homepage: https://github.com/sivaprasadnk/language_detector/
+version: 0.0.2
+homepage: https://sivaprasadnk.dev
 
 environment:
   sdk: '>=3.3.3 <4.0.0'
