@@ -1,6 +1,6 @@
 name: language_detector
 description: Detect language of any text.
-version: 0.0.2
+version: 1.0.0
 homepage: https://sivaprasadnk.dev
 
 environment:

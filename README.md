@@ -11,7 +11,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  language_detector: ^0.0.2
+  language_detector: ^1.0.0
 ```
 
 ## Usage
@@ -27,8 +27,10 @@ import 'package:language_detector/language_detector.dart';
   Widget build(BuildContext context) {
    return OutlinedButton(
               onPressed: () async {
-                language = await LanguageDetector.getLanguageName(
+              var language = await LanguageDetector.getLanguageName(
                     content: 'helo');
+              var code = await LanguageDetector.getLanguageCode(
+                    content: 'helo');      
               },
               child: const Text("Get Language >"),
             ),
