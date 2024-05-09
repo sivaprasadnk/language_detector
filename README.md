@@ -1,8 +1,8 @@
 ## Language Detector
 
 Detect language of any text.
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-08 at 14 21 11](https://github.com/sivaprasadnk/language_detector/assets/75713903/dac2a2bc-43d2-4899-8e54-89fe00f5632a)
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-05-08 at 14 21 11](https://github.com/sivaprasadnk/language_detector/assets/75713903/9840db35-2704-443a-a740-3ddb75193836)
 
 ## Getting started
 
