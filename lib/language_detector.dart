@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:translator/translator.dart';
 
 class LanguageDetector {
-  /// gets language-code of the passed [content] argument
+  /// returns language-code of the passed [content] argument
   ///
   /// the [content] argument cannot be null.
   ///
@@ -20,7 +20,7 @@ class LanguageDetector {
     return language;
   }
 
-  /// gets language-name of the passed [content] argument
+  /// returns language-name of the passed [content] argument
   ///
   /// the [content] argument cannot be null.
   ///

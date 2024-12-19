@@ -1,3 +1,7 @@
+## 1.0.1
+
+*Updating dependencies to latest
+
 ## 1.0.0
 
 *Updating documentation

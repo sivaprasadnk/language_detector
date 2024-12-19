@@ -11,7 +11,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  language_detector: ^1.0.0
+  language_detector: ^1.0.1
 ```
 
 ## Usage
